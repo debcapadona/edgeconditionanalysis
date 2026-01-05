@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Roadmap</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #1a1d29;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #4facfe;
+            padding-bottom: 10px;
+        }
+
+        .phase {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 5px solid #4facfe;
+        }
+
+        .phase h3 {
+            color: #1a1d29;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .phase-goal {
+            font-style: italic;
+            color: #6c7a8f;
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .phase-section {
+            margin: 20px 0;
+        }
+
+        .phase-section h4 {
+            color: #4facfe;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .phase ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .phase li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .outcome {
+            background: #f5f7fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .outcome strong {
+            color: #1a1d29;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .phase-status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .status-completed {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-progress {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-planned {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .status-ongoing {
+            background: #e7e7ff;
+            color: #383874;
+        }
+    </style>
+</head>
+<body>
+    <h2>Project Roadmap</h2>
+
+    <div class="phase">
+        <h3>Phase 1 — Foundation & Baselines <span class="phase-status status-completed">Completed</span></h3>
+        <div class="phase-goal">Goal: Establish a scalable, interpretable foundation.</div>
+        
+        <ul>
+            <li>Ingest and normalize ~200,000 Hacker News discussions (2024–2025)</li>
+            <li>Design scalable ingestion and preprocessing pipelines</li>
+            <li>Define nine core linguistic dimensions for analysis</li>
+            <li>Train initial BERT-based models using a weakly supervised approach</li>
+            <li>Establish analytical baselines and sanity checks</li>
+            <li>Build initial visualizations for exploratory analysis</li>
+        </ul>
+
+        <div class="outcome">
+            <strong>Outcome:</strong>
+            A working end-to-end system capable of processing and analyzing large language corpora with methodological transparency.
+        </div>
+    </div>
+
+    <div class="phase">
+        <h3>Phase 2 — Platform Extension & Interpretability <span class="phase-status status-progress">In Progress</span></h3>
+        <div class="phase-goal">Goal: Expand data coverage and improve interpretability and usability.</div>
+        
+        <div class="phase-section">
+            <h4>Platform Enhancements</h4>
+            <ul>
+                <li>Integrate Reddit discussion feeds (2024–January 2026)</li>
+                <li>Introduce dimensional banding to support interpretation at both topic and dimension levels (by end of January 2026)</li>
+            </ul>
+        </div>
+
+        <div class="phase-section">
+            <h4>User Experience Enhancements</h4>
+            <ul>
+                <li>Add dynamic time slicing for longitudinal exploration (by January 10)</li>
+                <li>Introduce blockchain acknowledgment tracking (by January 20)</li>
+            </ul>
+        </div>
+
+        <div class="outcome">
+            <strong>Outcome:</strong>
+            Expanded corpus coverage and improved interpretability, enabling clearer analysis of temporal and topical language shifts.
+        </div>
+    </div>
+
+    <div class="phase">
+        <h3>Phase 3 — Analytical Expansion <span class="phase-status status-planned">Planned</span></h3>
+        <div class="phase-goal">Goal: Broaden analytical depth without sacrificing clarity.</div>
+        
+        <ul>
+            <li>Add additional linguistic dimensions as warranted by observed patterns (by end of February 2026)</li>
+            <li>Explore alternative embedding and classifier architectures for comparison (January–April 2026)</li>
+            <li>Introduce comparative baselines across sub-communities or topics (January–April 2026)</li>
+            <li>Expand temporal analysis to finer-grained resolution (by end of March 2026)</li>
+            <li>Improve visualization tooling for multi-dimensional exploration (by end of April 2026)</li>
+        </ul>
+
+        <div class="outcome">
+            <strong>Outcome:</strong>
+            A richer analytical surface area while preserving interpretability and methodological discipline.
+        </div>
+    </div>
+
+    <div class="phase">
+        <h3>Phase 4 — Scalability & Generalization <span class="phase-status status-planned">Planned</span></h3>
+        <div class="phase-goal">Goal: Stress-test architectural and methodological scalability.</div>
+        
+        <ul>
+            <li>Extend pipelines to support additional public-language corpora (by end of June 2026)</li>
+            <li>Validate performance and cost characteristics at larger data volumes (by end of June 2026)</li>
+            <li>Modularize pipelines to enable easier corpus substitution (by end of March 2026)</li>
+            <li>Document tradeoffs between model complexity and interpretability (by end of June 2026)</li>
+        </ul>
+
+        <div class="outcome">
+            <strong>Outcome:</strong>
+            Demonstrated architectural scalability and corpus-agnostic system design.
+        </div>
+    </div>
+
+    <div class="phase">
+        <h3>Phase 5 — Synthesis & Documentation <span class="phase-status status-ongoing">Ongoing</span></h3>
+        <div class="phase-goal">Goal: Make the work legible to others without overselling conclusions.</div>
+        
+        <ul>
+            <li>Produce written analyses describing observed language dynamics</li>
+            <li>Document methodological decisions, assumptions, and known limitations</li>
+            <li>Maintain a running log of revisions, failures, and design tradeoffs</li>
+            <li>Surface open questions and areas for future exploration</li>
+        </ul>
+
+        <div class="outcome">
+            <strong>Outcome:</strong>
+            A transparent research artifact that emphasizes process, judgment, and iteration over prediction.
+        </div>
+    </div>
+</body>
+</html>

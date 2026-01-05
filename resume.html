@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debra Capadona - Senior Technical Program Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f5f7fa;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a1d29 0%, #2a2f3f 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.3em;
+            margin-bottom: 12px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.1em;
+            color: #4facfe;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        
+        .header .tagline {
+            font-size: 1em;
+            color: #a8b2c1;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.95em;
+        }
+        
+        .contact-line {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-line:last-child {
+            margin-bottom: 16pt;
+        }
+        .contact-info a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            color: #00f2fe;
+        }
+        
+        .section {
+            background: white;
+            padding: 35px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+        
+        .section h2 {
+            color: #1a1d29;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #4facfe;
+            padding-bottom: 10px;
+        }
+        
+        .competencies {
+            display: grid;
+            gap: 18px;
+        }
+        
+        .competency {
+            padding-left: 20px;
+            border-left: 3px solid #4facfe;
+        }
+        
+        .competency strong {
+            color: #1a1d29;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        
+        .competency p {
+            color: #6c7a8f;
+            line-height: 1.7;
+        }
+        
+        .job {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .job:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .job h3 {
+            color: #1a1d29;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        
+        .job .title {
+            color: #4facfe;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .job .duration {
+            color: #6c7a8f;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        
+        .job ul {
+            margin-left: 20px;
+            margin-top: 12px;
+        }
+        
+        .job li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+            color: #2c3e50;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .skill-item {
+            padding: 15px;
+            background: #f5f7fa;
+            border-radius: 6px;
+            border-left: 3px solid #4facfe;
+        }
+        
+        .skill-item strong {
+            color: #1a1d29;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .skill-item p {
+            color: #6c7a8f;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        .education {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .education div {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .education strong {
+            color: #1a1d29;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .education p {
+            color: #6c7a8f;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 25px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .section {
+                padding: 25px 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Debra Capadona</h1>
+            <div class="subtitle">
+                Senior Technical Program Manager | Regulated Product Delivery & Risk Transformation
+            </div>
+            <div class="tagline">
+                Data Integrity, Controls & AI Governance
+            </div>
+            <p style="margin-bottom: 25px; line-height: 1.8;">
+                Executive-level program leader driving software, data, and risk transformation across regulated global enterprises.
+            </p>
+            <div class="contact-info">
+                <div class="contact-line">
+                   <span>✉️ <a href="mailto:deb.capadona@gmail.com">deb.capadona@gmail.com</a></span>
+                    <span>🔗 <a href="https://www.linkedin.com/in/debra-capadona/" target="_blank">LinkedIn</a></span>
+                    <span>💻 <a href="https://github.com/debcapadona/predictive_linguistics_analysis" target="_blank">GitHub</a></span>
+                    <span>🔗 <a href="https://edgeconditionanalysis.com" target="_blank" title="Exploratory Research & Portfolio">Edge Condition Analysis</a></span>
+                </div>
+            </div>
+        
+        <div class="section">
+            <h2>Leadership & Technical Competencies</h2>
+            <div class="competencies">
+                <div class="competency">
+                    <strong>Regulated Product Delivery & Design Controls</strong>
+                    <p>Drives full-lifecycle program frameworks for hardware + software medical devices, embedding Design Controls, SDLC phase gates, and risk-based decision making from ideation through commercial launch.</p>
+                </div>
+                
+                <div class="competency">
+                    <strong>Cross-Functional Orchestration & Execution Excellence</strong>
+                    <p>Owns end-to-end timelines, budgets, and resource plans across R&D, engineering, quality, regulatory, and clinical teams; turns ambiguous requirements into committed milestones and holds everyone lovingly accountable.</p>
+                </div>
+                
+                <div class="competency">
+                    <strong>Risk-Based Program Governance & Traceability</strong>
+                    <p>Builds integrated risk management into product architecture and data flows; ensures every requirement, verification, and validation artifact is traceable, auditable, and ready for regulatory submission on day one.</p>
+                </div>
+                
+                <div class="competency">
+                    <strong>AI/ML Risk Governance & Model Integrity</strong>
+                    <p>Implements model-governance frameworks that ensure data integrity, drift detection, and regulatory alignment for ML systems operating at scale.</p>
+                </div>
+                
+                <div class="competency">
+                    <strong>Systemic Risk Detection & Strategic Insight</strong>
+                    <p>Surfaces system-level risks through cross-domain insight and game-theory–informed analysis, driving strategies that stabilize critical environments and reduce exposure.</p>
+                </div>
+                
+                <div class="competency">
+                    <strong>Clarity, Influence & Risk Communication</strong>
+                    <p>Distills multi-layered risk insights into concise guidance that drives aligned decisions across technical and executive stakeholders.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <h3>Google via Synergis</h3>
+                <div class="title">Senior Program Manager | DMA-15 Compliance</div>
+                <div class="duration">2025 – Present | Hybrid, New York City</div>
+                <ul>
+                    <li>Driving DMA-15 compliance across all 8 designated Core Platform Services (Search, Play, YouTube, Chrome, Android, Ads, Maps, Cloud), aligning legal, product, and engineering on fairness, choice, and data-portability mandates</li>
+                    <li>Oversaw the creation of the audit-readiness framework that improved data integrity, standardized documentation, and supported regulator-aligned transparency for the cloud native core products and services</li>
+                    <li>Translated DMA-15 mandates into clear, actionable engineering deliverables and resolved cross-team interpretation gaps</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <h3>GE Aerospace</h3>
+                <div class="title">Senior Program Manager Consultant | Cyber Separation Program</div>
+                <div class="duration">2024 – 2025 | Remote (USA)</div>
+                <ul>
+                    <li>Owned the cloud-separation strategy and execution for GE Aerospace's spin-off: stood up an entirely new, standalone cloud environment (multi-region AWS/GCP) while carving out from the legacy GE estate — zero airborne incidents, zero downtime for critical services</li>
+                    <li>Consolidated 241 legacy applications into 97 cloud-native systems with full deployment automation, IaC (Terraform/CloudFormation), CI/CD orchestration (GitLab + Argo), and immutable configuration standards</li>
+                    <li>Established the repeatable cloud-modernization playbook (landing zones, guardrails, golden paths) now being rolled out across remaining Aerospace portfolios</li>
+                    <li>Served as the Risk Lead for GE Aerospace's enterprise-wide data center and cybersecurity-stack separation, overseeing the risk strategy for consolidating 241 legacy applications into 97 modernized systems during the corporate split</li>
+                    <li>Oversaw the large-scale infrastructure modernization program including deployment automation, cloud orchestration, control mapping, and configuration integrity standards required for the new standalone environment</li>
+                    <li>Led cross-functional risk assessment, issue remediation, and mitigation planning for platform, data, and identity pathways impacted by the split, ensuring safe cutover and sustained resiliency</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <h3>Citibank</h3>
+                <div class="title">Director | Principal Program Manager | Data Governance Transformation</div>
+                <div class="duration">2021 – 2024 | Remote (New York City)</div>
+                <ul>
+                    <li>Delivered the bank's first cloud-native enterprise data-governance platform from the ground up; embedded policy-as-code, automated lineage, retention enforcement, and control execution across 50+ regulated applications running on GCP and AWS</li>
+                    <li>Owned the multi-year modernization of data pipelines (Kafka, Snowflake, Collibra) and compliance services; replaced legacy batch processes with real-time, API-driven governance and automated evidence generation that slashed audit prep cycles by 70%+</li>
+                    <li>Drove DevSecOps transformation across 12 domains: shifted ETL, MDM, and reporting workloads to immutable, containerized cloud deployments with full CI/CD guardrails and zero-trust control validation</li>
+                    <li>Built and enforced golden-path cloud architecture patterns (landing zones, policy engines, drift detection) that unified engineering, security, and compliance teams and became the firm-wide standard for regulated data products</li>
+                    <li>Turned thousands of pages of regulatory policy into enforceable, version-controlled code modules deployed via infrastructure-as-code — delivering audit-proof traceability at cloud velocity</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <h3>JPMorgan Chase & Co.</h3>
+                <div class="title">Vice President | Lead Program Manager</div>
+                <div class="duration">2014 – 2021 | Remote (New York City)</div>
+                <ul>
+                    <li>Led development of one of the industry's largest and most complex ML forecasting models for CCAR and CECL, coordinating 20+ teams and 100+ applications across a major CPU/GPU compute cluster</li>
+                    <li>Delivered model-governance software automating lineage, documentation, and model-behavior transparency to meet OCC and Federal Reserve expectations and reduce model-governance and regulatory risk</li>
+                    <li>Owned full-lifecycle cloud-migration and modernization program for 300+ legacy applications; designed and enforced Design Controls-equivalent governance (traceability, verification artifacts, risk-based phase gates) across the entire portfolio, delivering compliant, auditable systems on time</li>
+                    <li>Key technical program lead on the migration of 100+ legacy applications to a governed Snowflake warehouse, embedding retention logic, lineage automation, and control execution to strengthen data integrity and support continuous compliance</li>
+                    <li>Lead technical program manager for the delivery of the initial build and adoption of the data governance framework, creating applications for provenance tracking, authoritative-source management, and policy enforcement — translating regulatory requirements into enforceable, risk-reducing software</li>
+                    <li>Directed cross-disciplinary engineering teams integrating governance telemetry and model-risk analytics, reducing end-to-end model runtime by ~25% and decreasing regulator queries through improved traceability and operational reliability</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <strong>Platforms</strong>
+                    <p>Snowflake | Kafka | Collibra | GCP | AWS</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Domains</strong>
+                    <p>Data Governance | AI/ML Compliance | Infrastructure Modernization</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Frameworks</strong>
+                    <p>Agile (SAFe / Scrum) | Risk Management | Ethical AI</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Education & Certifications</h2>
+            <div class="education">
+                <div>
+                    <strong>B.S., Information Systems Management</strong>
+                    <p>University of Maryland</p>
+                </div>
+                <div>
+                    <strong>Certifications</strong>
+                    <p>Certified ScrumMaster (CSM)<br>Certified Scrum Product Owner (CSPO)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Featured Projects</h2>
+            <div style="padding: 20px; background: #f5f7fa; border-radius: 6px; border-left: 4px solid #4facfe;">
+                <strong style="color: #1a1d29; display: block; margin-bottom: 10px; font-size: 1.1em;">Linguistic Analysis Platform</strong>
+                <p style="color: #6c7a8f; line-height: 1.7; margin-bottom: 15px;">
+                    Large-scale NLP system analyzing 200K+ forum discussions using 9 custom BERT models. 
+                    Demonstrates end-to-end technical delivery: database architecture, GPU-accelerated ML inference, 
+                    statistical validation, and interactive visualizations.
+                </p>
+                <a href="https://github.com/debcapadona/predictive_linguistics_analysis" target="_blank" style="color: #4facfe; text-decoration: none; font-weight: 600;">View Project on GitHub →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
